@@ -1,0 +1,37 @@
+@import 'base';
+
+body {
+	font-family: "Roboto", sans-serif;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.form-control:focus, button:focus, input:focus, textarea:focus {    
+    outline: 0;
+	box-shadow: 0 0 0 0 white;
+}
+
+.jumbotron {
+    @extend .rounded-0;
+}
+
+.badge {
+    letter-spacing: 0.14px;
+}
+
+.current-title {
+    @extend .font-weight-bold, .text-uppercase, .pt-3;
+    letter-spacing: 2.33px;
+    color: $color2;
+    p {
+        @extend .mb-0, .mt-3;
+    }
+    div {
+        width: 10%;
+        text-align: left;
+        hr {
+            border-width: 2px;
+            border-color: $color2;
+        }
+    }    
+}

@@ -1,0 +1,38 @@
+@import '../base';
+
+.product-image-viewer {
+    @extend .d-flex, .flex-column-reverse;
+    .nav-link {
+        @extend .p-0, .mr-2;        
+    }
+    
+    .tab-pane {
+        height: 50%;
+        @extend .image;
+    }
+}
+.image {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+    @extend .bg-white;
+    img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    &-thumb {
+        @extend .d-flex, .align-items-center, .border, .bg-white;
+        
+        width: 161px;
+        height: 161px;
+        
+        &.active {
+            @extend .border-primary;
+        }
+    }
+}

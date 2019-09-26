@@ -1,0 +1,30 @@
+@import '../base';
+
+footer {
+    background-image: linear-gradient(252deg, #546a79, #31394d);
+    @extend .py-5;
+    small {
+        font-size: 12px;
+        line-height: 1.67;
+        @extend .text-white;
+    }
+    ul {
+        li {
+            @extend .my-3;
+            a {
+                @extend .text-white;
+            }            
+        }
+    }
+    p {
+        @extend .my-3, .text-capitalize, .text-white;
+    }
+    
+    .input-group {
+        @extend .pb-3;
+        input {
+            background-color: $newsletterInputBg;
+            border-color: $newsletterInputBg;
+        }
+    }
+}

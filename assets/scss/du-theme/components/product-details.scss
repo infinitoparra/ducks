@@ -1,0 +1,20 @@
+@import '../base';
+
+$color3: #4d5471;
+
+.product-details {
+    color: $newsletterInputBg !important;
+    &__title {
+        font-family: Roboto;
+        color: $color3;
+    }
+    .add-to-cart {
+        button.buy {
+            @extend .text-uppercase, .px-3, .mr-2;
+            background-color: black;
+        }
+        button.refresh {
+            @extend .px-3;
+        }
+    }
+}

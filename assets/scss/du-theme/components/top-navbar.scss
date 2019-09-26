@@ -1,0 +1,23 @@
+@import '../base';
+
+.top-navbar {
+    @extend .text-capitalize, .border-bottom, .p-0;
+    .navbar-brand {
+        @extend .p-0;
+    }
+    &__search-btn {
+        @extend .bg-primary;
+        i {
+            @extend .text-white, .p-2, .py-3; 
+        }  
+    }
+
+   .nav-link  {
+       color: $navLinkColor !important;
+       @extend .px-3;
+       
+       &.active {
+           font-weight: bold;           
+       }       
+    }
+}

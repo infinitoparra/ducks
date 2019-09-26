@@ -1,0 +1,67 @@
+@import '../base';
+
+$activeGreen: #6ca127;
+
+.category-filter {
+    @extend .bg-white, .shadow, .px-4, .py-2, .mb-4;
+    ul {
+        li {
+            font-size: 18px;
+            letter-spacing: 0.18px;    
+            @extend .my-3;
+            &.active {
+                a {
+                    @extend .border-bottom, .pr-3;
+                    color: $activeGreen;
+                    border-width: 2px !important;
+                    border-color: $activeGreen !important;
+                    font-weight: bold;
+                }
+            }
+            a {
+                @extend .text-capitalize, .py-2;
+                color: $color1;
+                &:hover {
+                    @extend .text-decoration-none;
+                }
+            }
+        }
+    }
+}
+
+.price-filter, .color-filter {
+    @extend .bg-white, .shadow, .px-3, .py-2, .mb-4;
+    
+    h3 {
+        @extend .text-capitalize, .p-2, .border-bottom;    
+        font-size: 30px;
+        letter-spacing: 0.3px;        
+        font-weight: 500;
+        font-style: normal;
+        color: $color1;
+        border-color: $color1;        
+    }    
+    
+    ul{
+        li {
+            @extend .pr-2;
+            a {
+                &:hover {
+                    @extend .text-decoration-none;
+                }                
+            }     
+        }
+    }
+}
+
+.category-menu {
+    margin-top: -35px;
+    @extend .bg-white;
+    .nav-link {
+        @extend .text-uppercase, .py-4;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 3px;          
+        color: $color2;
+    }
+}

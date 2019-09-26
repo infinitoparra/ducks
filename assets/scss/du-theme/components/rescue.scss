@@ -1,0 +1,42 @@
+@import '../base';
+
+.rescue {
+    &__title {
+        @extend .text-center, .text-uppercase, .mb-2;
+        font-size: 14px;
+        font-weight: 900; 
+        letter-spacing: 2.33px;  
+        color: $color2;
+    }
+    &__separator {
+        width: 50px;
+        @extend .my-3;
+        border-width: 2px !important;    
+        border-color: $color2;
+    }
+    &__subtitle {
+        @extend .text-center;
+        color: $navLinkColor;        
+    }
+    &__caption {
+        @extend .px-2, .py-4;
+        color: $navLinkColor;
+        line-height: 1.38;
+        
+    }
+}
+
+.about-us {
+    h2 {
+        font-size: 36px;
+        font-weight: 500;  
+        letter-spacing: 2px;    
+        color: $color2;
+    }
+    
+    p {
+        font-size: 21px;
+        line-height: 1.43;
+        color: $navLinkColor;        
+    }
+}

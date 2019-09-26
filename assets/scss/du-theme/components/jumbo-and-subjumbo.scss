@@ -1,0 +1,75 @@
+@import '../base';
+
+.jumbotron {
+    background-size: cover;
+    @extend .mb-0;
+    h1 {
+        font-size: $h1FontSize;
+        letter-spacing: $h1LetterSpacing;
+    }
+}
+
+.jumbo-one, 
+.jumbo-two, 
+.jumbo-three {    
+    &__top-tagline {
+        @extend .text-uppercase, .m-1;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        color: $color1;
+    }
+    h1 {        
+        color: $color2;
+    }
+   &__tagline {
+       font-size: 21px;
+        line-height: 1.24;
+        letter-spacing: normal;  
+        @extend .text-dark;        
+    }
+    .btn-primary {
+        @extend .text-white, .text-capitalize, .shadow;
+        background-image: radial-gradient(circle at 50% 40%, $primary, #4b672c);        
+    }
+}
+
+.jumbo-four, 
+.jumbo-five {       
+    background-position: 70% 90%;
+    @extend .text-white, .text-center, .text-capitalize, .py-5;
+    h1 {
+        @extend .pt-5;
+        span {
+            @extend .border-bottom, .px-1, .pb-2;
+            border-width: 2px !important;            
+        }
+    }
+    &__breadcrumb {
+        @extend .pt-3, .pb-5;
+        font-size: 20px;
+        letter-spacing: 1.11px;        
+        i {
+            @extend .px-2;            
+        }
+    }    
+}
+
+.subjumbo {
+    @extend .py-5;    
+    h1 {
+        @extend .text-uppercase, .pt-5;
+        font-size: 36px;
+        font-weight: 500;  
+        letter-spacing: 2px;    
+        color: $color2;
+    }    
+    p {
+        font-size: 21px;     
+        color: $navLinkColor;
+    }
+    .btn {
+        @extend .text-capitalize, .shadow;
+        color: $navLinkColor;
+    }
+}

@@ -1,0 +1,29 @@
+@import '../base';
+
+.item {
+    @extend .border-0;
+    
+    &:hover {
+        text-decoration: none;
+    }
+
+        @extend .border-0;
+        .card-body {
+            height: 262px;                
+        }        
+        .card-footer {
+            font-size: 14px;
+            color: $color2;
+            border: 0;
+            @extend .px-0, .small;
+            background-color: $body-bg;            
+        }    
+        ul {
+            right: 0;
+            @extend .mr-2, .mt-2;
+            a {                
+                text-decoration: none;
+            }
+        }        
+    
+}
